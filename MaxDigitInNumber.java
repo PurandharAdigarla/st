@@ -13,3 +13,4 @@ public class MaxDigitInNumber
         System.out.println("Maximum digit in the number the given number is "+max);
     }   
 }
+
