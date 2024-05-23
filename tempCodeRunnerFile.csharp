@@ -1,0 +1,36 @@
+public class AnagramChecker {
+    
+    public static void main(String[] args) {
+        // Example usage:
+        String a = "CAT";
+        String b = "tac";
+        
+        System.out.println(isAnagram(a, b)); // Should print true
+    }
+    
+    public static boolean isAnagram(String a, String b) {
+        // Convert both strings to lower case to ensure case insensitivity
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+        
+        // If lengths are different, they cannot be anagrams
+        if (a.length() != b.length()) {
+            return false;
+        }
+        
+        // Initialize sum and product for both strings
+        int sumA = 0, sumB = 0;
+        long productA = 1, productB = 1;
+        
+        // Calculate sum and product of ASCII values for both strings
+        for (int i = 0; i < a.length(); i++) {
+            sumA += a.charAt(i);
+            sumB += b.charAt(i);
+            productA *= a.charAt(i);
+            productB *= b.charAt(i);
+        }
+        
+        // Compare sums and products
+        return (sumA == sumB) && (productA == productB);
+    }
+}
