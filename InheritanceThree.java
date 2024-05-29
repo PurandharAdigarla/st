@@ -18,6 +18,6 @@ class Three extends Two
 }
 public class InheritanceThree {
     public static void main(String[] args) {
-        Three obj=new Three();
+        new Three();
     }
 }

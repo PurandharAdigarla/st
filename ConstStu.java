@@ -11,7 +11,8 @@ class ConstStu
     }
     ConstStu(ConstStu st1,ConstStu st2)
     {
-        if (this.) {
+        if (this.age>st1) {
+            System.out.println(st1);
             
         }
     }

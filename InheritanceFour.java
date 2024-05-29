@@ -43,7 +43,7 @@ class StudentCourse extends StudentOne
     public String toString()
     {
         //return id+" "+name+" "+deg+" "+branch+" "+section;
-        return super.toString()+" "+branch+" "+section;
+        return super.toString()+" "+branch+" "+section;  //super.toString() accesses the parameters of the superclass.
     }
 }
 public class InheritanceFour
