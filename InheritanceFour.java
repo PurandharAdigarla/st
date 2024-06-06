@@ -3,13 +3,18 @@ class StudentOne
     int id;
     String name;
     String deg;
+    String 
     StudentOne()
     {
         System.out.println("One()");
     }
+
+    public StudentOne(int id) {
+        this.id = id;
+    }
     StudentOne(int id, String name)
     {
-        this.id=id;
+        this(id);
         this.name=name;
     }
     StudentOne(int id, String name, String deg)
