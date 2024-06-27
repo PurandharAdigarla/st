@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class JaggedArray
 {
@@ -19,10 +20,10 @@ public class JaggedArray
         }
         System.out.println("Jagged Array");
         for (int[] a : arr) {
-            for (int b : a) {
-                System.out.print(b + " ");
+//            for (int b : a) {
+//                System.out.print(b + " ");
+            System.out.println(Arrays.toString(a));
             }
-            System.out.println();
+           System.out.println();
         }
     }
-}
