@@ -1,8 +1,9 @@
+package studentmap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class StuLinkedHashMap
+public class StuMap
 {
     public static void main(String[] args)
     {
@@ -19,7 +20,7 @@ public class StuLinkedHashMap
         Student st5 = new Student(4, "Jayanth", "IT", add5);
 
         LinkedHashMap<Student,Integer> stad=new LinkedHashMap<Student,Integer>();
-        TreeMap<Student,Integer> treestad=new TreeMap<Student,Integer>();
+        TreeMap<Student,Integer> treestad=new TreeMap<Student,Integer>(new StuIdCompare());
 
         stad.put(st1,1);
         stad.put(st2,4);
